@@ -1,0 +1,518 @@
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?4qtrjz');
+    src:  url('../fonts/icomoon.eot?4qtrjz#iefix') format('embedded-opentype'),
+          url('../fonts/icomoon.ttf?4qtrjz') format('truetype'),
+          url('../fonts/icomoon.woff?4qtrjz') format('woff'),
+          url('../fonts/icomoon.svg?4qtrjz#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* search */
+.search-bar {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: .980392rem;
+    background-color: white;
+    margin: 0;
+    padding-top: .43573rem;
+    padding-left: .217865rem;
+    display: flex;
+}
+
+.logo {
+    height: 100%;
+}
+
+.logo img {
+    height: .624401rem;
+}
+
+.search {
+    flex: 1;
+    height: .624401rem;
+    line-height: .624401rem;
+    margin: 0 .653595rem 0 .43573rem;
+    border: 1px solid #00D0D4;
+    box-sizing: border-box;
+    border-radius: .217865rem;
+    color: #555;
+    font-size: .305011rem;
+    display: flex;
+    padding-left: .326797rem;
+}
+
+.search::before {
+    content: "\e986";
+    font-family: 'icomoon';
+    margin-right: .108932rem;
+}
+
+.holder {
+    width: 100%;
+    height: 1.416122rem;
+    /* background-color: #123; */
+}
+
+/* 轮播图 */
+.ad {
+    width: 100%;
+    margin-top: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.ad ul.imgs {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 300%;
+}
+
+.ad .imgs li {
+    width: 50%;
+    float: left;
+}
+
+.ad img {
+    width: 100%;
+}
+
+.ad .circles {
+    overflow: hidden;
+    position: absolute;
+    margin: 0 .326797rem;
+    padding: 0;
+    bottom: .217865rem;
+    right: 0;
+}
+
+.ad .circle {
+    float: left;
+    width: 6px;
+    height: 6px;
+    border-radius: 4px;
+    background-color: #fff;
+    z-index: 2;
+    margin-left: .108932rem;
+}
+
+.ad .circle.selected {
+    width: 14px;
+}
+
+/* header */
+.header ul {
+    margin: 0;
+    margin-top: .43573rem;
+    display: flex;
+    padding: 0;
+}
+
+.header li {
+    width: 20%;
+}
+
+.header li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header li .image {
+    width: 1.348366rem;
+    height: 1.348366rem;
+    background: url(../img/hotel.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.header li:nth-child(2) .image {
+    background: url(../img/flight.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.header li:nth-child(3) .image {
+    background: url(../img/train.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.header li:nth-child(4) .image {
+    background: url(../img/package.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.header li:nth-child(5) .image {
+    background: url(../img/piao.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.header li span {
+    display: block;
+    font-size: .32rem;
+    text-align: center;
+    margin-top: .174292rem;
+    color: #333;
+}
+
+/* subheader */
+.subheader ul {
+    display: flex;
+    padding: 0;
+}
+
+.subheader li {
+    flex: 20%;
+}
+
+.subheader li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subheader li .image {
+    width: .77037rem;
+    height: .77037rem;
+    background: url(../img/subheader1.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.subheader li:nth-child(2) .image {
+    background: url(../img/subheader2.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.subheader li:nth-child(3) .image {
+    background: url(../img/subheader3.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.subheader li:nth-child(4) .image {
+    background: url(../img/subheader4.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.subheader li:nth-child(5) .image {
+    background: url(../img/subheader5.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.subheader li span {
+    display: block;
+    font-size: .32rem;
+    text-align: center;
+    margin-top: .152505rem;
+    color: #333;
+}
+
+/* nav */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+nav li {
+    flex: 20%;
+}
+
+nav li:nth-child(n+6){
+    margin-top: .196078rem;
+}
+
+nav li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav li .image {
+    width: .77037rem;
+    height: .77037rem;
+    background: url(../img/nav1.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+nav li:nth-child(2) .image {
+    background: url(../img/nav2.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+nav li:nth-child(3) .image {
+    background: url(../img/nav3.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+nav li:nth-child(4) .image {
+    background: url(../img/nav4.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+nav li:nth-child(5) .image {
+    background: url(../img/nav5.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+nav li:nth-child(6) .image {
+    background: url(../img/nav6.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+nav li:nth-child(7) .image {
+    background: url(../img/nav7.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+nav li:nth-child(8) .image {
+    background: url(../img/nav8.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+nav li:nth-child(9) .image {
+    background: url(../img/nav9.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+nav li:nth-child(10) .image {
+    background: url(../img/nav10.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+nav li span {
+    font-size: .32rem;
+    margin-top: .152505rem;
+    color: #333;    
+}
+
+/* 特惠度假 */
+.content {
+    padding: .217865rem;
+}
+
+.content h3 {
+    margin: .108932rem;
+    font-size: .392157rem;
+    color: #26282a;
+    font-weight: 700;
+    padding: .108932rem;
+}
+
+.content .option {
+    overflow: hidden;
+}
+
+.content .option div {
+    float: left;
+    font-size: .32rem;
+    color: #666;
+    padding: .174292rem .283224rem;
+    border: 1px solid #ccc;
+    border-radius: .108932rem;
+    margin-right: .217865rem;
+    box-sizing: border-box;
+}
+
+.content .option div.selected {
+    color: white;
+    background-color: #17c0c8;
+    border: none;
+}
+
+.info ul {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    margin-top: .217865rem;
+}
+
+.info ul li {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.info ul li:nth-child(n+3) {
+    margin-top: .217865rem;
+}
+
+.info ul li .image {
+    position: relative;
+    width: 4.681481rem;
+    height: 2.925708rem;
+    border-radius: .108932rem;
+    overflow: hidden;
+}
+
+.info ul li .image img {
+    width: 100%;
+    height: 100;
+}
+
+.info ul li .intro {
+    display: inline-block;
+    flex-direction: column;
+    width: 2.396514rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, .5);
+    padding: .217865rem;
+    border-radius: .108932rem;
+}
+
+.info ul li .intro div:nth-child(1) {
+    font-size: .376586rem;
+    color: white;
+    margin-bottom: .217865rem;
+    text-align: center;
+}
+
+.info ul li .intro div:nth-child(2) {
+    font-size: .268991rem;
+    color: #ffde00;
+    text-align: center;
+}
+
+.info ul li .title {
+    font-size: .376586rem;
+    margin: .108932rem;
+    margin-right: 0;
+}
+
+.holiday .info ul li .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info ul li .price {
+    font-size: .484183rem;
+    color: #ff7400;
+    font-weight: 550;
+    margin-left: .108932rem;
+}
+
+.info ul li .price::before {
+    content: "\e93e";
+    font-family: 'icomoon';
+    margin-right: .108932rem;
+}
+
+.more {
+    padding: .326797rem;
+    text-align: center;
+    color: #00D0D4;
+    border: 1px solid #00D0D4;
+    box-sizing: border-box;
+    font-size: .305011rem;
+    margin: 0 .43573rem;
+    border-radius: .108932rem;
+}
+
+.more::after {
+    content: "\e901";
+    font-family: 'icomoon';
+    vertical-align: middle;
+}
+
+/* ticket */
+.ticket .detail {
+    color: #555;
+    font-size: .345824rem;
+    margin-left: .133043rem;
+    margin-bottom: .108932rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* strategy */
+.strategy .title {
+    font-size: .383094rem;
+}
+
+/* copyright */
+.copyright {
+    margin: 1.089325rem .43573rem;
+    padding-bottom: 100px;
+}
+
+.copyright div {
+    text-align: center;
+    margin-bottom: .544662rem;
+    line-height: 1.2;
+}
+
+.copyright span {
+    display: inline-block;
+    color: #999999;
+    font-size: .261438rem;
+    margin-right: .152505rem;
+}
+
+/* 底部工具栏 */
+.toolbar {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid   #E0E0E0;
+}
+
+.toolbar ul {
+    margin: .217865rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.toolbar li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toolbar li::before {
+    content: "\e903";
+    font-family: 'icomoon';
+    font-size: .43573rem;
+    margin-bottom: .217865rem;
+}
+
+.toolbar li:nth-child(2)::before{
+    content: "\e900";
+}
+
+.toolbar li:nth-child(3)::before{
+    content: "\e942";
+}
+
+.toolbar li:nth-child(4)::before{
+    content: "\e902";
+}
+
+.toolbar li span {
+    color: #616161;
+    font-size: .328366rem;
+}
+
+.toolbar li.selected::before,
+.toolbar li.selected span {
+    color: #18C0C8;
+}
